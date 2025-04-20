@@ -1,83 +1,15 @@
+"use client";
+import { useRouter } from "next/navigation";
+import { useEffect } from "react";
+
 function Page() {
-  return (
-    <div>
-      <h1>Home</h1>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-      <p>Welcome to the home page!</p>
-    </div>
-  );
+  const router = useRouter();
+
+  useEffect(() => {
+    router.replace("/wyzwania");
+  }, []);
+
+  return <></>;
 }
 
 export default Page;

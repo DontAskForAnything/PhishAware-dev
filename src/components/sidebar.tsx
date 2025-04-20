@@ -48,6 +48,10 @@ export default function Sidebar() {
       }
     }
   }, [pathname]);
+
+  if (pathname.includes("lekcja")) {
+    return <></>;
+  }
   return (
     <div className="h-screen w-[300px] bg-[#378075] text-white flex flex-col p-4 px-[10px0">
       <div className="flex flex-row gap-8 px-2 pt-2  my-2">
@@ -84,7 +88,7 @@ export default function Sidebar() {
               />
               <p className="text-lg ">Michał Jasiński</p>
             </div>
-            <Settings  size={20} className="focus:outline-none" tabIndex={0} />
+            <Settings size={20} className="focus:outline-none" tabIndex={0} />
           </div>
           <ul
             tabIndex={0}
