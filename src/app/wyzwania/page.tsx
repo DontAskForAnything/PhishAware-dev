@@ -96,7 +96,9 @@ export default function Page() {
         </div>
 
         <Link
-            href="/lekcja" className="w-full bg-[#378075] cursor-pointer p-4 drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]   flex flex-col rounded-4xl bg-[url(/bg-sign-2.png)]  bg-cover bg-no-repeat  bg-left">
+          href="/lekcja"
+          className="w-full bg-[#378075] cursor-pointer p-4 drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]   flex flex-col rounded-4xl bg-[url(/bg-sign-2.png)]  bg-cover bg-no-repeat  bg-left"
+        >
           <div className="px-5 gap-4 flex flex-col">
             <div className="h-[100]" />
             <div className="flex-1 flex justify-between  items-center ">
