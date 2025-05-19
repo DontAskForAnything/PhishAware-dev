@@ -5,6 +5,7 @@ import Sidebar from "@/components/sidebar";
 
 const redHat = Red_Hat_Display({
   variable: "--font-redHat",
+  subsets:['latin']
 });
 
 export const metadata: Metadata = {
