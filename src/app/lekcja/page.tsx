@@ -251,7 +251,16 @@ export default function Page() {
 
   return (
     <div className="flex-1  w-full bg-[#A5C7BF] h-full ">
-      <Toaster />
+      <Toaster
+      toastOptions={{
+        error: {
+          style: {
+            background: '#548880', // custom background color
+            color: 'white',         // custom text color
+          },
+        },
+      }}
+    />
       <div className="flex-1 mx-6 flex-col relative flex  h-full items-center">
         <Status current={currentStep} size={data.questions.length + 2} />
 
@@ -536,7 +545,7 @@ const CompletionScreen = ({ totalPoints }: { totalPoints: number }) => {
           +{forestGrowth}
         </span>
       </div>
-      <p className="text-xl text-center mb-4 opacity-70 mb-8">haktarów</p>
+      <p className="text-xl text-center mb-4 opacity-70 mb-8">hektarów</p>
 
       <div
         onClick={() => (window.location.href = "/")}

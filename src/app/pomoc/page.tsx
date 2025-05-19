@@ -28,15 +28,16 @@ export default function PomocPage() {
       answer:
         "Za każde ukończone wyzwanie otrzymujesz punkty, które przeliczane są na hektary wirtualnego lasu. Im więcej punktów, tym większy las!",
     },
-    {
-      question: "Czy mogę powtórzyć ukończone wyzwanie?",
-      answer:
-        "Tak, możesz w dowolnym momencie wrócić do ukończonych wyzwań, aby odświeżyć swoją wiedzę.",
-    },
+    // {
+    //   question: "Czy mogę powtórzyć ukończone wyzwanie?",
+    //   answer:
+    //     "Tak, możesz w dowolnym momencie wrócić do ukończonych wyzwań, aby odświeżyć swoją wiedzę.",
+    // },
   ];
 
   return (
     <main className="flex flex-col bg-gray-100 min-h-screen">
+            <h1 className="text-7xl font-bold px-7 pt-7">Pomoc</h1>
       <div className="px-6 py-4">
         <div className="relative mb-4">
           <input
@@ -59,7 +60,7 @@ export default function PomocPage() {
               >
                 <div className="flex justify-between items-center cursor-pointer">
                   <h3 className="font-medium text-lg">{item.question}</h3>
-                  <ChevronRight size={20} className="text-[#378075]" />
+                  
                 </div>
                 <p className="text-gray-600 mt-2">{item.answer}</p>
               </div>

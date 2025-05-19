@@ -21,7 +21,7 @@ const data = {
       current_percent: 28,
     },
     {
-      name: "Passwords",
+      name: "Hasła",
       description:
         "Twoje hasło to klucz do cyfrowego życia — nie ustawiaj „123456”. Ten kurs pokaże Ci, jak tworzyć silne i unikalne hasła, unikać ryzyka ich ponownego używania i korzystać z menedżerów haseł, by wszystko było bezpieczne. Proste kroki, duża ochrona.",
       current_percent: 96,
@@ -120,7 +120,9 @@ export default function Page() {
       <h1 className="text-4xl  px-6 mt-12 my-6 font-bold">Dodatkowe kursy</h1>
       <div className="px-6  flex flex-1 gap-8 pb-6">
         {data.additional_courses.map((el, index) => (
-          <div
+          <Link
+          
+              href={`/kursy/${index}`}
             key={index}
             className="w-full bg-[#D9D9D9] cursor-pointer  drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]   flex flex-col pt-4 rounded-4xl bg-[url(/bg-sign.png)]  bg-cover bg-no-repeat  bg-left"
           >
@@ -149,7 +151,7 @@ export default function Page() {
                 style={{ width: `${el.current_percent}%` }}
               ></div>
             </div>
-          </div>
+          </Link>
         ))}
       </div>
     </main>

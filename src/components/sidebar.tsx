@@ -85,11 +85,12 @@ export default function Sidebar() {
             tabIndex={0}
             className="dropdown-content menu p-2 shadow  ml-8 rounded-box w-52 bg-[#378075] 0 transition-all duration-500 ease-in-out"
           >
+
             <li>
-              <a href="/settings">Settings</a>
+              <a >Ustawienia</a>
             </li>
             <li>
-              <a href="/signout">Sign Out</a>
+              <a>Wyloguj</a>
             </li>
           </ul>
         </div>
