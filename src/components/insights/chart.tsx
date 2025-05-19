@@ -1,6 +1,5 @@
 "use client";
 
-import { useEffect } from "react";
 import {
   Radar,
   RadarChart,
@@ -11,6 +10,7 @@ import {
 } from "recharts";
 
 interface PentagonChartProps {
+  // eslint-disable-next-line
   data: { subject: string; score: number; benchmark: number }[] | any[];
 }
 

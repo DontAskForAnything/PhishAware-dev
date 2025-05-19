@@ -1,7 +1,5 @@
 import PentagonChart from "@/components/insights/chart";
-import SecurityRadarChart from "@/components/insights/chart";
 import { ArrowDown, ArrowUp } from "lucide-react";
-import { map, number } from "zod";
 
 const data = [
   { name: "average_score", title: "80%", change: "10.8%", direction: "up" },
@@ -88,7 +86,7 @@ function Page() {
         ))}
 
         <div className="card bg-[#E5EEE4] shadow w-full min-h-[500px] col-span-4 max-h-[500px]">
-          <PentagonChart data={pentagonData} />
+          {pentagonData && <PentagonChart data={pentagonData} />}
         </div>
       </div>
     </div>

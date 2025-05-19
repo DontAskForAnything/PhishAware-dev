@@ -2,29 +2,20 @@
 import Avatar from "boring-avatars";
 import { useState, useEffect } from "react";
 import {
-  Home,
   Trophy,
-  Bell,
   LifeBuoy,
-  List,
   Settings,
   Shrimp,
-  Target,
-  Phone,
-  Mail,
-  Building2,
-  User,
   Gamepad2,
   Crown,
 } from "lucide-react";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
 export default function Sidebar() {
   const pathname = usePathname(); // Get the current route
   const [active, setActive] = useState("");
-
+  console.log(active);
   // Define menu items with their corresponding paths
   const menuItems = [
     { name: "Wyzwania", icon: <Gamepad2 size={25} />, path: "/wyzwania" },

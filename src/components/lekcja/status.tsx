@@ -14,7 +14,7 @@ export const Status = ({
       <h1 className="text-2xl  text-[#024840] font-extrabold ">PhishAware</h1>
     </div>
 
-    <div className="relative h-14 flex flex-row justify-between items-center max-w-[400px] w-full">
+    <div className="relative h-14 flex flex-row justify-between items-center max-w-[600px] w-full">
       {Array.from({ length: size }).map((_, index) => (
         <div
           key={index}
