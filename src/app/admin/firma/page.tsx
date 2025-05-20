@@ -29,7 +29,7 @@ export default function FirmaPage() {
 
   return (
     <main className="px-6 pb-6 gap-1 flex flex-col">
-            <Toaster
+      <Toaster
         toastOptions={{
           success: {
             style: {
@@ -41,11 +41,7 @@ export default function FirmaPage() {
       />
       <h1 className="text-7xl font-bold mb-8">Firma</h1>
 
-      <form
-        onSubmit={handleSubmit}
-        className="bg-white rounded-lg   max-w-2xl"
-      >
-
+      <form onSubmit={handleSubmit} className="bg-white rounded-lg   max-w-2xl">
         <div className="flex flex-col gap-4">
           {[
             { label: "Nazwa firmy", name: "nazwaFirmy" },

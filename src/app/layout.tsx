@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Red_Hat_Display } from "next/font/google";
 import "./globals.css";
-import Sidebar from "@/components/sidebar";
 
 const redHat = Red_Hat_Display({
   variable: "--font-redHat",

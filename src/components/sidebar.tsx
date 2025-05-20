@@ -11,7 +11,6 @@ import {
   ChartLine,
   Book,
   Shield,
-  Building,
   User,
   Building2,
 } from "lucide-react";
@@ -125,7 +124,7 @@ export default function Sidebar({
               <a>Ustawienia</a>
             </li>
             <li>
-              <a href="/">Wyloguj</a>
+              <Link href="/">Wyloguj</Link>
             </li>
           </ul>
         </div>
