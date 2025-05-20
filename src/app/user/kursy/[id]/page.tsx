@@ -560,10 +560,10 @@ export default function KursPage({ params }: { params: Promise<{ id: string }> }
           Nie znaleziono kursu o ID: {id}
         </div>
         <button
-          onClick={() => router.push("/kursy")}
+          onClick={() => router.push("/user")}
           className="bg-[#378075] text-white px-4 py-2 rounded-lg"
         >
-          Wróć do listy kursów
+          Wróć
         </button>
       </div>
     );
@@ -584,7 +584,7 @@ export default function KursPage({ params }: { params: Promise<{ id: string }> }
   const handleNext = () => {
     if (isLast) {
       console.log(`Progress: 100%`);
-      router.push("/");
+      router.push("/user");
 
     } else {
       const newPage = Math.min(currentPage + 1, total - 1);

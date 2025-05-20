@@ -36,9 +36,8 @@ export default function PomocPage() {
   ];
 
   return (
-    <main className="flex flex-col bg-gray-100 min-h-screen">
-            <h1 className="text-7xl font-bold px-7 pt-7">Pomoc</h1>
-      <div className="px-6 py-4">
+    <main className=" p-6  gap-1 flex flex-col">       
+            <h1 className="text-7xl font-bold mb-8">Pomoc</h1>
         <div className="relative mb-4">
           <input
             type="text"
@@ -110,7 +109,7 @@ export default function PomocPage() {
             </div>
           </div>
         </div>
-      </div>
+
     </main>
   );
 }

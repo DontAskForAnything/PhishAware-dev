@@ -58,7 +58,7 @@ export default function Page() {
             </div>
           ))}
           <Link
-            href="/lekcja"
+            href="/user/lekcja"
             className="bg-[#378075] w-16 h-16 rounded-full hover:scale-105 transition z-10 flex justify-center items-center cursor-pointer"
           >
             <PlayIcon size={30} color="white" />{" "}
@@ -96,7 +96,7 @@ export default function Page() {
         </div>
 
         <Link
-          href="/lekcja"
+          href="/user/lekcja"
           className="w-full bg-[#378075] cursor-pointer p-4 drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]   flex flex-col rounded-4xl bg-[url(/bg-sign-2.png)]  bg-cover bg-no-repeat  bg-left"
         >
           <div className="px-5 gap-4 flex flex-col">
@@ -122,7 +122,7 @@ export default function Page() {
         {data.additional_courses.map((el, index) => (
           <Link
           
-              href={`/kursy/${index}`}
+              href={`/user/kursy/${index}`}
             key={index}
             className="w-full bg-[#D9D9D9] cursor-pointer  drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]   flex flex-col pt-4 rounded-4xl bg-[url(/bg-sign.png)]  bg-cover bg-no-repeat  bg-left"
           >

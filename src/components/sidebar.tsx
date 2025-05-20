@@ -8,21 +8,38 @@ import {
   Shrimp,
   Gamepad2,
   Crown,
+  ChartLine,
+  Book,
+  Shield,
+  Building,
+  User,
+  Building2,
 } from "lucide-react";
 import { usePathname } from "next/navigation";
 import Link from "next/link";
 
-export default function Sidebar() {
+export default function Sidebar( {type = 'user'} : {type?: 'user' | 'admin'}) {
   const pathname = usePathname(); // Get the current route
   const [active, setActive] = useState("");
   console.log(active);
   // Define menu items with their corresponding paths
-  const menuItems = [
-    { name: "Wyzwania", icon: <Gamepad2 size={25} />, path: "/wyzwania" },
-    { name: "Ranking", icon: <Crown size={25} />, path: "/ranking" },
-    { name: "Osiągnięcia", icon: <Trophy size={25} />, path: "/osiagniecia" },
-    { name: "Pomoc", icon: <LifeBuoy size={25} />, path: "/pomoc" },
+  let menuItems = [
+    { name: "Wyzwania", icon: <Gamepad2 size={25} />, path: "/user/wyzwania" },
+    { name: "Ranking", icon: <Crown size={25} />, path: "/user/ranking" },
+    { name: "Osiągnięcia", icon: <Trophy size={25} />, path: "/user/osiagniecia" },
+    { name: "Pomoc", icon: <LifeBuoy size={25} />, path: "/user/pomoc" },
   ];
+  if(type === 'admin') {
+  menuItems=[
+    { name: "Analiza", icon: <ChartLine size={25} />, path: "/admin/analiza" },
+    { name: "Moduły", icon: <Book size={25} />, path: "/admin/moduly" },
+    { name: "Testy bezpieczeństwa", icon: <Shield size={25} />, path: "/admin/testy-bezpieczenstwa" },
+    { name: "Użytkownicy", icon: <User size={25} />, path: "/admin/uzytkownicy" },
+    { name: "Firma", icon: <Building2 size={25} />, path: "/admin/firma" },
+    { name: "Pomoc", icon: <LifeBuoy size={25} />, path: "/admin/pomoc" },
+  ]
+  }
+
 
   // Set active page based on URL
   useEffect(() => {

@@ -22,8 +22,7 @@ export default function RootLayout({
     <html lang="pl">
       <body className={` ${redHat.variable}  antialiased min-w-4xl`}>
         <div className="flex h-screen max-h-screen overflow-hidden">
-          <Sidebar />
-          <main className="flex-1 overflow-auto">{children}</main>
+{children}
         </div>
       </body>
     </html>

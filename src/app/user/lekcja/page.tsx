@@ -548,7 +548,7 @@ const CompletionScreen = ({ totalPoints }: { totalPoints: number }) => {
       <p className="text-xl text-center mb-4 opacity-70 mb-8">hektarów</p>
 
       <div
-        onClick={() => (window.location.href = "/")}
+        onClick={() => (window.location.href = "/user")}
         className="rounded-full w-64 h-10 bg-transparent border border-[#024840] flex justify-center items-center mt-4 hover:scale-105 transition cursor-pointer"
       >
         <p className="text-sm text-[#024840] text-center">
