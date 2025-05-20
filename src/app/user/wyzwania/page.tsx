@@ -121,8 +121,7 @@ export default function Page() {
       <div className="px-6  flex flex-1 gap-8 pb-6">
         {data.additional_courses.map((el, index) => (
           <Link
-          
-              href={`/user/kursy/${index}`}
+            href={`/user/kursy/${index}`}
             key={index}
             className="w-full bg-[#D9D9D9] cursor-pointer  drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]   flex flex-col pt-4 rounded-4xl bg-[url(/bg-sign.png)]  bg-cover bg-no-repeat  bg-left"
           >

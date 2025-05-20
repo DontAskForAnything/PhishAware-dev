@@ -252,15 +252,15 @@ export default function Page() {
   return (
     <div className="flex-1  w-full bg-[#A5C7BF] h-full ">
       <Toaster
-      toastOptions={{
-        error: {
-          style: {
-            background: '#548880', // custom background color
-            color: 'white',         // custom text color
+        toastOptions={{
+          error: {
+            style: {
+              background: "#548880", // custom background color
+              color: "white", // custom text color
+            },
           },
-        },
-      }}
-    />
+        }}
+      />
       <div className="flex-1 mx-6 flex-col relative flex  h-full items-center">
         <Status current={currentStep} size={data.questions.length + 2} />
 

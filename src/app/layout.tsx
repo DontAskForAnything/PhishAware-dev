@@ -5,7 +5,7 @@ import Sidebar from "@/components/sidebar";
 
 const redHat = Red_Hat_Display({
   variable: "--font-redHat",
-  subsets:['latin']
+  subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
@@ -22,7 +22,7 @@ export default function RootLayout({
     <html lang="pl">
       <body className={` ${redHat.variable}  antialiased min-w-4xl`}>
         <div className="flex h-screen max-h-screen overflow-hidden">
-{children}
+          {children}
         </div>
       </body>
     </html>

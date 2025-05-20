@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from "react";
 import { BookOpen, Clock, Award } from "lucide-react";
 import { useRouter } from "next/navigation";
-import toast, {Toaster} from "react-hot-toast";
+import toast, { Toaster } from "react-hot-toast";
 
 // Przykładowa baza danych kursów
 const coursesDatabase: {
@@ -13,12 +13,11 @@ const coursesDatabase: {
     estimatedTime: string;
     author: string;
   };
-} = 
-{
+} = {
   "0": {
-    "id": "0",
-    "title": "Myślisz, że rozpoznasz oszustwo?",
-    "pages": [
+    id: "0",
+    title: "Myślisz, że rozpoznasz oszustwo?",
+    pages: [
       `<h2>Wprowadzenie do świata phishingu</h2>
       <p>Phishing to jedna z najczęstszych i najskuteczniejszych metod cyberataków na świecie. Codziennie miliony osób otrzymują fałszywe wiadomości zaprojektowane, by wyłudzić dane osobowe, hasła czy pieniądze.</p>
       <p>W tym kursie poznasz techniki, które oszuści stosują by omijać zabezpieczenia techniczne i wykorzystywać ludzką psychologię.</p>`,
@@ -216,15 +215,15 @@ const coursesDatabase: {
 
       `        <h3>Gratulacje!</h3>
         <p>Ukończyłeś kurs "Myślisz, że rozpoznasz oszustwo?".</p>
-  `
+  `,
     ],
-    "estimatedTime": "30 min",
-    "author": "Zespół PhishAware"
+    estimatedTime: "30 min",
+    author: "Zespół PhishAware",
   },
   "1": {
-    "id": "1",
-    "title": "Twoje hasło to klucz do cyfrowego życia",
-    "pages": [
+    id: "1",
+    title: "Twoje hasło to klucz do cyfrowego życia",
+    pages: [
       `<h2>Dlaczego bezpieczeństwo haseł jest kluczowe</h2>
       <p>Hasła to pierwsza i często jedyna linia obrony chroniąca Twoje dane osobowe, finanse i cyfrową tożsamość. Mimo to, większość z nas traktuje je zbyt lekko.</p>
       <p>W tym kursie nauczysz się tworzyć naprawdę bezpieczne hasła i zarządzać nimi tak, by maksymalnie ograniczyć ryzyko włamania.</p>
@@ -514,13 +513,18 @@ const coursesDatabase: {
       `
         <h3>Gratulacje!</h3>
         <p>Ukończyłeś kurs "Twoje hasło to klucz do cyfrowego życia".</p>
-      `
+      `,
     ],
-    "estimatedTime": "25 min",
-    "author": "Zespół PhishAware"
-  }}
+    estimatedTime: "25 min",
+    author: "Zespół PhishAware",
+  },
+};
 
-export default function KursPage({ params }: { params: Promise<{ id: string }> }) {
+export default function KursPage({
+  params,
+}: {
+  params: Promise<{ id: string }>;
+}) {
   // Unwrap params with React.use()
   const { id } = React.use(params);
   const router = useRouter();
@@ -570,41 +574,40 @@ export default function KursPage({ params }: { params: Promise<{ id: string }> }
   }
 
   const total = course.pages.length;
-  const percent = Math.round(((currentPage ) / total) * 100);
+  const percent = Math.round((currentPage / total) * 100);
   const isLast = currentPage === total - 1;
- if(isLast){
-   toast.success("Gratulacje! Kurs został ukończony.");
- }
+  if (isLast) {
+    toast.success("Gratulacje! Kurs został ukończony.");
+  }
   const handlePrev = () => {
     const newPage = Math.max(currentPage - 1, 0);
     setCurrentPage(newPage);
-    console.log(`Progress: ${Math.round(((newPage ) / total) * 100)}%`);
+    console.log(`Progress: ${Math.round((newPage / total) * 100)}%`);
   };
 
   const handleNext = () => {
     if (isLast) {
       console.log(`Progress: 100%`);
       router.push("/user");
-
     } else {
       const newPage = Math.min(currentPage + 1, total - 1);
       setCurrentPage(newPage);
-      console.log(`Progress: ${Math.round(((newPage ) / total) * 100)}%`);
+      console.log(`Progress: ${Math.round((newPage / total) * 100)}%`);
     }
   };
 
   return (
     <main className="flex flex-col min-h-screen bg-gray-100">
-            <Toaster
-      toastOptions={{
-        error: {
-          style: {
-            background: '#548880', 
-            color: 'white',
+      <Toaster
+        toastOptions={{
+          error: {
+            style: {
+              background: "#548880",
+              color: "white",
+            },
           },
-        },
-      }}
-    />
+        }}
+      />
       {/* Nagłówek */}
       <div className="sticky top-0 z-10 bg-white shadow-md">
         <div className="container mx-auto px-6 py-4 flex items-center space-x-6">
@@ -612,7 +615,9 @@ export default function KursPage({ params }: { params: Promise<{ id: string }> }
           <div className="flex items-center text-sm text-gray-600">
             <Clock size={16} className="mr-1" /> {course.estimatedTime}
           </div>
-          <div className="flex items-center text-sm text-gray-600">{percent}% ukończono</div>
+          <div className="flex items-center text-sm text-gray-600">
+            {percent}% ukończono
+          </div>
         </div>
       </div>
 
@@ -622,8 +627,8 @@ export default function KursPage({ params }: { params: Promise<{ id: string }> }
           <div className="flex items-center text-gray-600 text-sm mb-4">
             <BookOpen size={16} className="mr-1" /> Autor: {course.author}
           </div>
-<div
-  className="
+          <div
+            className="
     prose max-w-none 
     [&_h2]:text-lg [&_h2]:font-bold [&_h2]:mt-2 [&_h2]:mb-2 [&_h2]:text-gray-900
     [&_h3]:text-xl [&_h3]:font-bold [&_h3]:mt-2 [&_h3]:mb-2 [&_h3]:text-gray-800
@@ -643,8 +648,8 @@ export default function KursPage({ params }: { params: Promise<{ id: string }> }
     [&_.quiz]:bg-gray-50 [&_.quiz]:p-6 [&_.quiz]:rounded-lg [&_.quiz]:border [&_.quiz]:border-gray-200 [&_.quiz]:my-6
     [&_.certificate-info]:bg-green-50 [&_.certificate-info]:p-6 [&_.certificate-info]:rounded-lg [&_.certificate-info]:border-l-4 [&_.certificate-info]:border-green-500 [&_.certificate-info]:my-6
   "
-  dangerouslySetInnerHTML={{ __html: course.pages[currentPage] }}
-/>
+            dangerouslySetInnerHTML={{ __html: course.pages[currentPage] }}
+          />
 
           {/* Nawigacja */}
           <div className="mt-6 flex justify-between">
