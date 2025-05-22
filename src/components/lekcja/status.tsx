@@ -35,7 +35,7 @@ export const Status = ({
 
     <Link
       className={`text-sm w-3xs text-right  text-black  font-extrabold ${current == size ? " opacity-0 cursor-default" : "opacity-30"}`}
-      href={"/wyzwania"}
+      href={"/user/wyzwania"}
     >
       opuść kurs
     </Link>

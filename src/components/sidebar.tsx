@@ -79,7 +79,7 @@ export default function Sidebar({
     return <></>;
   }
   return (
-    <div className="h-screen w-[300px] bg-[#378075] text-white flex flex-col p-4 px-[10px0">
+    <div className="h-screen w-[300px] bg-[#378075] text-white flex flex-col p-4 px-[10px">
       <div className="flex flex-row gap-8 px-2 pt-2  my-2">
         <Shrimp size={33} />
         <h1 className="text-2xl font-extrabold mb-6">PhishAware</h1>
