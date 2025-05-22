@@ -41,7 +41,7 @@ const getBackgroundColor = (value: number) => {
 export default function TestyBezpieczenstwa() {
   return (
     <div className=" px-6 pb-6 gap-8 flex flex-col">
-      <h1 className="text-7xl font-bold ">Testy Bezpieczestwa</h1>
+      <h1 className="text-7xl font-bold ">Testy Bezpieczeństwa</h1>
 
       <div className="  gap-8 flex flex-row justify-between ">
         <div
