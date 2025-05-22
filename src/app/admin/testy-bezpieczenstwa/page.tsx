@@ -73,7 +73,7 @@ export default function TestyBezpieczenstwa() {
           className={`w-full justify-center items-center min-h-[390px] gap-1  bg-[#D9D9D9] p-6  drop-shadow-[0_4px_4px_rgba(0,0,0,0.25)]   flex flex-col rounded-2xl  `}
         >
           <p className="text-sm font-semibold text-center">
-            Porównanie miesiecznę
+            Porównanie miesięczne
           </p>
           <LineChart />
 
