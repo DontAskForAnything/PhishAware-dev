@@ -1,36 +1,94 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# PhishAware
+**The "Duolingo of cybersecurity"**
 
-## Getting Started
+**Live Version (Prototype):** [phishaware.vercel.app](https://phishaware.vercel.app)
 
-First, run the development server:
+PhishAware is a modern training system that not only teaches through gamification but also tests effectiveness in a real environment and adapts to the employee's needs. We transform the biggest threat (the human factor) into your company's strongest line of defense.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Why PhishAware?
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Up to 95% of breaches are caused primarily by human error. Traditional solutions fail - they are often boring courses with no results, too much theory, too little practice, and a lack of personalization.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+In 2024 alone, $12,500,000,000 was lost due to cyber scammers, and 83% of companies fell victim to cybercrimes.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Main Prototype Features
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 1. Learning Through Gamification
+Short, weekly security lessons (3 - 5 minutes) that adapt to the employee's needs. This includes growing your own forest with each completed lesson and team rankings driving friendly competition.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+![Solving a challenge](./docs/Wyzawnie%20End-1.png)
+![Checking answers](./docs/Wyzawnie%20End-2.png)
+![Completing a challenge - forest growth](./docs/Wyzawnie%20End.png)
+![User Ranking](./docs/Ranking.png)
+![Achievements](./docs/Osiągnięcia.png)
 
-## Deploy on Vercel
+### 2. Realistic Knowledge Testing
+Realistic tests in a natural environment... exactly when no one expects it.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+![Security tests panel](./docs/Testy%20bezpiecznstwa.png)
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### 3. Administrator and Analyst Panel
+Detailed analytics and an admin view for users, allowing you to track participation rates and test results.
+
+![User Management](./docs/Użytkownicy.png)
+
+---
+
+## Educational Modules
+
+A comprehensive approach to threats, including:
+* Phishing, Vishing, Smishing, Pretexting, Baiting
+* Passwords, Device security, Remote work, Workplace security
+* GDPR (RODO), Privacy, Safe internet, Malware
+
+![Modules Panel](./docs/Moduły.png)
+
+
+## Polish 
+
+# PhishAware
+**"Duolingo cyberbezpieczeństwa"** **Wersja Live (Prototyp):** [phishaware.vercel.app](https://phishaware.vercel.app)
+
+PhishAware to nowoczesny system szkoleniowy, który nie tylko uczy przez gamefikację, ale też testuje skuteczność w realnym środowisku i dostosowuje się do potrzeb pracownika. Przekształcamy największe zagrożenie (czynnik ludzki) w najsilniejszą linię obrony Twojej firmy.
+
+---
+## Dlaczego PhishAware?
+
+Aż 95% naruszeń jest spowodowanych przede wszystkim błędem ludzkim. Tradycyjne rozwiązania zawodzą - to często nudne kursy bez efektów, za dużo teorii, za mało praktyki i brak personalizacji. 
+
+W samym 2024 roku stracono 12 500 000 000 USD z powodu cyberoszustów, a 83% firm padło ofiarą cyberprzestępstw.
+
+---
+## Główne funkcje prototypu
+### 1. Nauka przez Grywalizację
+Krótkie, cotygodniowe lekcje bezpieczeństwa (3 - 5 minut), które dostosowują się do potrzeb pracownika. Rozrastanie swojego lasu z każdą ukończoną lekcją oraz rankingi zespołowe napędzające przyjazną konkurencję.
+
+![Rozwiązywanie wyzwania](./docs/Wyzawnie%20End-1.png)
+![Sprawdzanie odpowiedzi](./docs/Wyzawnie%20End-2.png)
+![Zakończenie wyzwania - rozwój lasu](./docs/Wyzawnie%20End.png)
+![Ranking użytkowników](./docs/Ranking.png)
+![Osiągnięcia](./docs/Osiągnięcia.png)
+
+### 2. Realistyczne testowanie wiedzy
+Realistyczne testy w naturalnym środowisku... wtedy, kiedy nikt się nie spodziewa.
+
+![Panel testów bezpieczeństwa](./docs/Testy%20bezpiecznstwa.png)
+
+### 3. Panel Administratora i Analityka
+Szczegółowa analityka i widok admina dla użytkowników, pozwalająca sprawdzić wskaźnik uczestnictwa i wyniki testów.
+
+![Zarządzanie użytkownikami](./docs/Użytkownicy.png)
+
+---
+## Moduły Edukacyjne
+
+Kompleksowe podejście do zagrożeń, obejmujące między innymi:
+* Phishing, Vishing, Smishing, Pretexting, Baiting
+* Hasła, Bezpieczeństwo urządzeń, Praca zdalna, Bezpieczeństwo w miejscu pracy 
+* RODO, Prywatność, Bezpieczny internet, Malware
+
+![Panel Modułów](./docs/Moduły.png)
